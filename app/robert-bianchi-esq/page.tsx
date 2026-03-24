@@ -1,11 +1,10 @@
 import { Metadata } from 'next'
 import PageHero from '@/components/PageHero'
 import ContactSidebar from '@/components/ContactSidebar'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Robert A. Bianchi, Esq. - Founding Partner | Bianchi Law Group',
-  description: 'Robert A. Bianchi is a former Morris County Prosecutor and NJ Certified Criminal Trial Attorney. National TV legal analyst on CNN, Fox News, HLN, and MSNBC.',
+  title: 'Robert A. Bianchi, Esq. - Former Morris County Prosecutor | Bianchi Law Group',
+  description: 'Robert A. Bianchi is a former Morris County Prosecutor, NJ Certified Criminal Trial Attorney, and national TV legal analyst on CNN, Fox News, HLN, and MSNBC.',
 }
 
 export default function Page() {
@@ -22,16 +21,22 @@ export default function Page() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-1">Robert A. Bianchi, Esq.</h2>
                 <p className="text-red-700 font-semibold mb-4">Founding Partner</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {['Former Morris County Prosecutor', 'NJ Certified Criminal Trial Attorney', 'National TV Legal Analyst', 'Super Lawyers'].map(c => (
                     <span key={c} className="bg-red-50 text-red-800 text-xs font-medium px-3 py-1 rounded-full border border-red-200">{c}</span>
                   ))}
                 </div>
               </div>
             </div>
-            <p className="text-gray-700 mb-4 leading-relaxed">Robert A. Bianchi is the highly acclaimed Founding Partner of The Bianchi Law Group, LLC and a former Morris County Prosecutor. He has tried over 100 jury trials spanning murder, drug trafficking, fraud, domestic violence, and virtually every type of criminal offense. Mr. Bianchi is certified by the Supreme Court of New Jersey as a Criminal Trial Attorney — a distinction held by less than 2% of attorneys in New Jersey.</p>
-            <p className="text-gray-700 mb-4 leading-relaxed">As a former prosecutor, Mr. Bianchi offers his clients an inside view of how the state builds its case and what strategies can be employed to defeat it. His work as a prosecutor — including serving as the first-ever Morris County Prosecutor to try a murder case to verdict in decades — provides an unmatched foundation for criminal defense work.</p>
-            <p className="text-gray-700 mb-8 leading-relaxed">Nationally recognized as a legal analyst, Mr. Bianchi regularly appears on CNN, HLN, Fox News, MSNBC, and other major networks, providing expert commentary on high-profile cases. He is also the host of "BLG Law Talk" and has been featured in The Star-Ledger, NJ.com, and Law & Crime Network.</p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">On May 10, 2007, Bob Bianchi was nominated by the Governor of the State of New Jersey to serve as the Morris County Prosecutor. Bob was unanimously confirmed by the New Jersey Senate Judiciary Committee and then unanimously confirmed by the New Jersey State Senate on June 18, 2007. He served as Morris County Prosecutor until February 8, 2013 — the chief law enforcement officer of Morris County with supervisory responsibility over every police department and municipal prosecutor in the county.</p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">In 1997, Bob applied for and passed his examination to become certified by the New Jersey Supreme Court as a Certified Criminal Trial Attorney — a major accomplishment held by less than 1% of attorneys (approximately 250 attorneys) in New Jersey. He was re-certified in 2004, 2009, and 2014. He is the only attorney in the State of New Jersey who is a former governor-appointed County Prosecutor who is a certified criminal trial attorney and currently handles criminal defense cases.</p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">Bob is aggressively fighting the government when his clients are charged with crimes. He has tried over 100 jury trials spanning murder, drug trafficking, fraud, domestic violence, and virtually every type of criminal offense. As Morris County Prosecutor, Bob managed a budget of over $11 million and a staff of approximately 170 people.</p>
+
+            <p className="text-gray-700 mb-8 leading-relaxed">Nationally recognized as a legal analyst, Mr. Bianchi regularly appears on CNN, HLN, Fox News, MSNBC, and other major networks. It is vital in today&apos;s media age to have an attorney that knows how to handle complex media matters so that clients are properly represented in this very important environment.</p>
+
             <div className="bg-red-700 text-white rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-2">Schedule a Free Consultation</h3>
               <p className="mb-4">Speak directly with Robert Bianchi about your case.</p>

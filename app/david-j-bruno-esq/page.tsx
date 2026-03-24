@@ -3,8 +3,8 @@ import PageHero from '@/components/PageHero'
 import ContactSidebar from '@/components/ContactSidebar'
 
 export const metadata: Metadata = {
-  title: 'David J. Bruno, Esq. - Partner | Bianchi Law Group',
-  description: 'David J. Bruno is a Partner at The Bianchi Law Group, LLC. A former prosecutor with extensive courtroom experience, David regularly appears on national tel',
+  title: 'David J. Bruno, Esq. - Certified Criminal Trial Attorney | Bianchi Law Group',
+  description: 'David J. Bruno is a Certified Criminal Trial Attorney, former Morris County prosecutor, and national TV legal analyst on Fox News, Fox Business, and HLN.',
 }
 
 export default function Page() {
@@ -21,10 +21,20 @@ export default function Page() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-1">David J. Bruno, Esq.</h2>
                 <p className="text-red-700 font-semibold mb-4">Partner</p>
-                <span className="bg-red-50 text-red-800 text-xs font-medium px-3 py-1 rounded-full border border-red-200">Former Prosecutor</span>
+                <div className="flex flex-wrap gap-2">
+                  {['NJ Certified Criminal Trial Attorney', 'Former Morris County Prosecutor', 'National TV Legal Analyst', 'Certified Daring Way Facilitator'].map(c => (
+                    <span key={c} className="bg-red-50 text-red-800 text-xs font-medium px-3 py-1 rounded-full border border-red-200">{c}</span>
+                  ))}
+                </div>
               </div>
             </div>
-            <p className="text-gray-700 mb-8 leading-relaxed">David J. Bruno is a Partner at The Bianchi Law Group, LLC. A former prosecutor with extensive courtroom experience, David regularly appears on national television as a legal analyst on Fox News, Fox Business, and HLN. His background as a prosecutor gives him a strategic advantage when defending clients against criminal charges throughout New Jersey.</p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">In 2007, David joined the Morris County Prosecutor&apos;s office as an assistant prosecutor, where he gained invaluable experience building, prosecuting, and trying a wide variety of cases. His experience covered the Major Crimes Unit (homicide, attempted homicide, aggravated manslaughter, police shootings, robbery, kidnapping, carjacking, vehicular homicide) and the Vehicular Homicide and Arson Unit.</p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">David is a frequent legal commentator on Fox News, Fox Business Channel, HLN, UPN9, and Investigation Discovery, commenting on criminal law cases, terrorism, police shootings, legal decisions, and congressional investigations.</p>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">David also believes that legal excellence and tenacity without compassion is an imbalanced approach. He understands there is trauma attached to being charged with a crime and his philosophy is to address not only his client&apos;s legal concerns but also personal issues that may have contributed to or arisen from these legal challenges. David is a certified Daring Way Facilitator and has completed Dr. Bren&eacute; Brown&apos;s national training in San Antonio, Texas.</p>
+
             <div className="bg-red-700 text-white rounded-lg p-6 text-center">
               <h3 className="text-xl font-bold mb-2">Free Consultation Available</h3>
               <a href="tel:8622924442" className="inline-block bg-white text-red-700 font-bold px-8 py-3 rounded hover:bg-gray-100 transition">
