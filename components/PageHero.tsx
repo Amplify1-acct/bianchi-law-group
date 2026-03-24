@@ -2,6 +2,7 @@ interface PageHeroProps {
   title: string
   subtitle?: string
   bgImage?: string
+  breadcrumb?: string
 }
 
 const W = 'https://bianchilawgroup.com/wp-content/uploads/2025/06'
