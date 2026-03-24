@@ -1,0 +1,88 @@
+import PageHero from '@/components/PageHero'
+import ContactSidebar from '@/components/ContactSidebar'
+import Link from 'next/link'
+
+export const metadata = {
+  title: "New Jersey Murder and Homicide Attorneys",
+  description: "The Bianchi Law Group - New Jersey Murder and Homicide Attorneys in New Jersey. Former prosecutors fighting for your rights. Free consultation: 862-292-4442.",
+}
+
+export default function Page() {
+  return (
+    <main>
+      <PageHero title="New Jersey Murder and Homicide Attorneys" subtitle="Defending Clients Facing Violent Criminal Charges" />
+      <section className="py-14" style={{ backgroundColor: '#F0F5FA' }}>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="lg:col-span-2 bg-white rounded-lg p-8 shadow-sm">
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Under New Jersey law, a felony murder charge differs significantly from other murder charges. To be charged with felony murder in New Jersey, an accused individual must have been in the process of committing certain enumerated crimes and subsequently killed someone in the commission of, or an attempt to commit, or flight after committing or attempting to commit such crimes.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>In a felony murder case, it does not need to be proven that the accused individual attempted or intended to murder or harm the victim in question. Similarly, in unique cases where death, even an accidental death, has occurred in the commission of an attempt to commit or flee after committing or attempting to commit a felony, the defendant will also be charged with felony murder.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>If you are a New Jersey resident who is being investigated or who has been arrested on a felony murder charge, it is crucial that you understand how a felony murder charge differs from a standard murder charge, as both carry serious consequences. Our criminal defense attorneys at The Bianchi Law Group, LLC can help and offer a free consultation to anyone facing this challenging situation. Call us immediately at 862-292-4442 to schedule your confidential consultation with our compassionate, capable team of murder defense lawyers.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>What Felonies, Also Known as Indictable Crimes in New Jersey, Lead To A Felony Murder Charge?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Many people wonder what situations could merit a felony murder charge. These are some of the most serious criminal offenses, resulting in severe penalties. If you or a loved one is facing any of the following crimes, you should contact highly skilled New Jersey criminal lawyers immediately for a strong criminal defense.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>The following indictable crimes can lead to a felony murder charge in New Jersey:</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>If you are arrested under the suspicion of one of the indictable crimes above, the prosecutor must prove the crime beyond a reasonable doubt. Additionally, the prosecutor has the burden to prove that the death occurred during the course of the crime or attempt to commit the crime, or during an immediate flight from the crime.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Please rest assured that just being arrested for one of the above crimes does not mean you'll necessarily be convicted. Our New Jersey criminal attorneys have helped countless individuals defeat or lower their felony murder charges, escaping the harsh penalties of a conviction. We'll apply our know-how, honesty, and determination to get you the most favorable outcome possible in your criminal case. Call now to schedule a free consultation where we'll discuss your criminal charges and potential defense strategies.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>What Are The Penalties For Murder In New Jersey?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Murder is a crime of the first degree. According to New Jersey law, a murder conviction can result in up to life in prison. Other cases may result in lengthy prison sentences, during which the person shall not be eligible for parole or be sentenced to a specific term of years between 30 years and life imprisonment, of which the person shall serve 30 years before being eligible for parole.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Additionally, killing an on-duty officer of the peace or a minor under age 14 can lead to more serious charges, including losing the possibility of parole. Manslaughter and death by auto are both considered slightly less serious crimes and could result in lower penalties.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Our criminal defense lawyers can help identify and explain the charges you're facing. We'll start by discussing your options with you in terms you can understand and help you determine which path to follow in fighting your charges. Even if you made a mistake and committed a crime, you still have rights that must be defended. We can often get our clients lower charges if police officers violate their rights.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Contact The Bianchi Law Group, LLC, to learn more about how we can help with violent crimes, felonies, misdemeanors, and more.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>Can You Get The Death Penalty For Murder In New Jersey?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>No, the state of New Jersey does not apply the death penalty for any crime. In 2007, New Jersey abolished the death penalty as a criminal penalty. Now, the most severe penalty under the state is life in prison without the possibility of parole.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Even though you don't need to fear the death penalty, lifetime imprisonment is a serious matter. Please act quickly to hire knowledgeable criminal defense lawyers like those at The Bianchi Law Group, LLC. We have a deep understanding of New Jersey law, including how the law impacts violent crime cases. Our fast thinking and honed negotiating skills may be able to save you from years in prison.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Aside from jail time and hefty legal fines, a conviction can also mean loss of rights following your case. For example, you could lose access to your children, have your professional licensing revoked, find it difficult to obtain employment or housing, and even be deported if you are an immigrant. Don't face these challenges and risks alone. Call our criminal defense attorneys today.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>How Can Our Team of Former Prosecutors Help You With a Murder Charge?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>If you or someone you love has been accused of murder in New Jersey, you need to act fast to get the help you need. You will undoubtedly face severe penalties if found guilty of this charge and, without proper help, could be stuck with the highest penalties possible.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Our criminal defense lawyers at The Bianchi Law Group, LLC will source and compile all necessary documentation and evidence relevant to your murder case. This may include evidence like security camera footage from the scene of the crime, records from medical staff, or phone records. Our team of former prosecutors may be able to use this evidence to demonstrate that you did not commit the crime or that the crime was not committed in the matter in which you are accused.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>We'll also provide emotional support throughout this trying process. Our criminal defense lawyers will offer guidance as you answer police officers' questions and defend you relentlessly in and out of court. You can count on our criminal defense team for legal counsel based on decades of experience, including years of experience as prosecutors. Let us help you fight your criminal charges. Call today.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>I’ve Been Accused of Murder in NJ. What Do I Do Now?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>It is essential to know that any murder case in New Jersey is exceptionally serious and can result in you receiving life-changing penalties. Being arrested can be stressful and may leave you feeling confused and worried about the future. Having the right legal team can provide you with the maximum benefits.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>As soon as you're arrested, you should contact our law office for help interacting with police officers and developing a strong defense. The Bianchi Law Group, LLC comprises a team of former prosecutors whose experience will provide you with a well-crafted defense. They will aggressively fight for your legal rights, not hesitate to bring your case to trial, and fight on your behalf to get you the best legal outcome possible. Having the proper legal defense in your corner can make all the difference.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>The Bianchi Law Group, LLC is composed of a team of former trial prosecutors who have handled the investigations and prosecutions of most crimes in New Jersey and will defend you for all federal and state crimes in New Jersey, including murder. Call our criminal defense lawyers immediately to get ahead of the prosecution and seek favorable results in your murder/manslaughter case.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>Are Your Criminal Trial Attorneys Confident and Qualified?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Partners Robert A. Bianchi and David J. Bruno are both certified by the Supreme Court of New Jersey as criminal trial attorneys.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>In New Jersey, the New Jersey Supreme Court has a certification committee that classifies certain New Jersey Lawyers as Certified Trial Attorneys. The process requires the prospective attorneys to satisfy strict criteria, including extensive jury trials, a primary focus on criminal law, an application submission, a peer review process, a character and background check, and pass a written examination. Only 250 of over 98,000 lawyers (less than 1%) are designated as certified criminal trial attorneys by the New Jersey Supreme Court.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Your lawyer's qualifications and experience should be an important factor in finding a New Jersey criminal defense attorney to represent you. Many New Jersey lawyers describe themselves as trial attorneys, but most do not have the New Jersey Court’s distinction as certified criminal trial Attorneys.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Reach out to The Bianchi Law Group, LLC, for highly skilled attorneys with experience on both sides of the courtroom. We promise to leverage our talent, knowledge, and honed legal skills to offer excellent legal representation and counsel.</p>
+              <h2 style={{ fontFamily: "'Playfair Display',serif", fontSize: "1.4rem", fontWeight: 700, color: "#272727", margin: "1.5rem 0 0.5rem" }}>What Are the Penalties for a Murder Conviction in New Jersey?</h2>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>As it stands, the maximum penalty for a conviction of first-degree murder in New Jersey is Life without Parole. In order for the sentencing judge to sentence a defendant to Life without Parole, a jury must find, beyond a reasonable doubt, an aggravating factor enumerated in the New Jersey Criminal Code at N.J.S.A. 2C:11-3(b)(4)(a)-(l) and one of the following circumstances:</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>Additionally, the sentencing judge may sentence the defendant to Life without Parole if the victim was a law enforcement officer or the victim was less than 14 years old, and the defendant commits a sexual assault in violation of N.J.S.A. 2C:14-2 or criminal sexual conduct in violation of N.J.S.A. 2C:14-3.</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>If none of the above circumstances apply, the judge must balance the aggravating and mitigating factors found in the New Jersey Criminal Code and sentence the defendant to a term between 30 years and life imprisonment, of which the person shall serve 30 years before being eligible for parole. Life is considered 75 years in the State of New Jersey, and the defendant must serve 85% of their murder sentence before being eligible for parole (at least 30 years of parole eligibility).</p>
+              <p style={{ fontFamily: "'Nunito Sans',sans-serif", fontSize: "15px", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>The sentencing judge may also order fines and restitution as prescribed by N.J.S.A. 2C:43-3 for all murder convictions in New Jersey.</p>
+              <div className="mt-8 pt-6 border-t border-gray-100">
+                <a href="tel:8622924442" className="btn-primary">
+                  Call 862-292-4442 for a Free Consultation
+                </a>
+              </div>
+            </div>
+            <aside>
+              <ContactSidebar />
+              <div className="mt-6 bg-white rounded-lg shadow-sm p-6">
+                <h3 style={{ fontFamily: "'Playfair Display',serif", fontWeight: 700, fontSize: "1.1rem", color: "#272727", marginBottom: 12 }}>Practice Areas</h3>
+                <ul className="space-y-2 text-sm">
+                  {[
+                    ['DWI / DUI Defense', '/criminal-defense/dwi'],
+                    ['Drug Crimes', '/criminal-defense/drug-crimes'],
+                    ['Murder and Homicide', '/criminal-defense/murder'],
+                    ['Robbery', '/criminal-defense/robbery'],
+                    ['Domestic Violence', '/criminal-defense/domestic-violence'],
+                    ['Appeals', '/criminal-defense/appeals'],
+                    ['Municipal Court', '/municipal-court'],
+                    ['Criminal Investigations', '/criminal-defense/criminal-investigations'],
+                  ].map(([label, href]) => (
+                    <li key={href}>
+                      <Link href={href} style={{ color: '#a61c23' }} className="hover:underline">
+                        &rsaquo; {label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}
