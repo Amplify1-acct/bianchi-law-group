@@ -1,532 +1,154 @@
-import React from 'react';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Sitemap - The Bianchi Law Group',
+}
 
 export default function SitemapPage() {
-  const sitemapSections = [
-    {
-      title: 'Main Pages',
-      links: [
-        { name: 'Home', href: '/' },
-        { name: 'About Us', href: '/about' },
-        { name: 'Practice Areas', href: '/practice-areas' },
-        { name: 'Resources', href: '/resources' },
-        { name: 'Contact Us', href: '/contact' },
-      ]
-    },
-    {
-      title: 'Our Team',
-      links: [
-        { name: 'Robert A. Bianchi, Esq', href: '/team/robert-bianchi' },
-        { name: 'Christina Hall, Esq.', href: '/team/christina-hall' },
-        { name: 'Christopher A. Eaton, Esq.', href: '/team/christopher-eaton' },
-        { name: 'Danielle M. Esposito, Esq.', href: '/team/danielle-esposito' },
-        { name: 'David J. Bruno, Esq.', href: '/team/david-bruno' },
-        { name: 'Dennis Kessler, Esq.', href: '/team/dennis-kessler' },
-        { name: 'Paul A. Di Lella, Esq.', href: '/team/paul-dilella' },
-        { name: 'Tricia H. Margolis, Esq.', href: '/team/tricia-margolis' },
-        { name: 'Careers', href: '/careers' },
-        { name: "Prosecutor's Perspective", href: '/prosecutors-perspective' },
-      ]
-    },
-    {
-      title: 'Criminal Defense',
-      links: [
-        { name: 'Criminal Defense Overview', href: '/practice-areas/criminal-defense' },
-        { name: 'Appeals', href: '/practice-areas/appeals' },
-        { name: 'Criminal Investigations', href: '/practice-areas/criminal-investigations' },
-        { name: 'Crisis Management', href: '/practice-areas/crisis-management' },
-        { name: 'Municipal Court', href: '/practice-areas/municipal-court' },
-        { name: 'Juvenile Crimes', href: '/practice-areas/juvenile-crimes' },
-      ]
-    },
-    {
-      title: 'Municipal Court',
-      links: [
-        { name: 'Bad Checks', href: '/practice-areas/bad-checks' },
-        { name: 'Disorderly Conduct', href: '/practice-areas/disorderly-conduct' },
-        { name: 'Leaving the Scene of an Accident', href: '/practice-areas/leaving-scene-accident' },
-        { name: 'Resisting Arrest', href: '/practice-areas/resisting-arrest' },
-      ]
-    },
-    {
-      title: 'Sex Crimes',
-      links: [
-        { name: 'Sex Crimes Overview', href: '/practice-areas/sex-crimes' },
-        { name: 'Lewdness', href: '/practice-areas/lewdness' },
-        { name: 'Monetary Penalties for Sex Offenders', href: '/practice-areas/monetary-penalties-sex-offenders' },
-        { name: 'Observation & Disclosure of Sexual Contact', href: '/practice-areas/observation-disclosure-sexual-contact' },
-        { name: 'Rape Shield Law', href: '/practice-areas/rape-shield-law' },
-        { name: 'Registration of Sex Offenders', href: '/practice-areas/sex-offender-registration' },
-        { name: 'Sex Crime Definitions', href: '/practice-areas/sex-crime-definitions' },
-        { name: 'Sexual Assault', href: '/practice-areas/sexual-assault' },
-      ]
-    },
-    {
-      title: 'White Collar Crimes',
-      links: [
-        { name: 'White Collar Crimes Overview', href: '/practice-areas/white-collar-crimes' },
-        { name: 'Credit Card Fraud & Theft', href: '/practice-areas/credit-card-fraud' },
-        { name: 'Forgery', href: '/practice-areas/forgery' },
-      ]
-    },
-    {
-      title: 'DWI & Drug Crimes',
-      links: [
-        { name: 'DWI', href: '/practice-areas/dwi' },
-        { name: 'Drug Crimes', href: '/practice-areas/drug-crimes' },
-        { name: 'Distribution of Controlled Dangerous Substances', href: '/practice-areas/distribution-cds' },
-        { name: 'Possession of Controlled Dangerous Substances', href: '/practice-areas/possession-cds' },
-        { name: 'Possession With the Intent to Distribute', href: '/practice-areas/possession-intent-distribute' },
-      ]
-    },
-    {
-      title: 'Violent Crimes',
-      links: [
-        { name: 'Violent Crimes Overview', href: '/practice-areas/violent-crimes' },
-        { name: 'Assault By Auto', href: '/practice-areas/assault-by-auto' },
-        { name: 'Carjacking', href: '/practice-areas/carjacking' },
-        { name: 'Child Cruelty & Neglect', href: '/practice-areas/child-cruelty-neglect' },
-        { name: 'Death By Auto or Vehicular Homicide', href: '/practice-areas/death-by-auto' },
-        { name: 'Domestic Violence', href: '/practice-areas/domestic-violence' },
-        { name: 'Endangering An Injured Victim', href: '/practice-areas/endangering-injured-victim' },
-        { name: 'Endangering The Welfare of Children', href: '/practice-areas/endangering-welfare-children' },
-        { name: 'Harassment', href: '/practice-areas/harassment' },
-        { name: 'Kidnapping', href: '/practice-areas/kidnapping' },
-        { name: 'Manslaughter & Aggravated Manslaughter', href: '/practice-areas/manslaughter' },
-        { name: 'Murder', href: '/practice-areas/murder' },
-        { name: 'Restraining Orders', href: '/practice-areas/restraining-orders' },
-        { name: 'Simple & Aggravated Assault', href: '/practice-areas/assault' },
-      ]
-    },
-    {
-      title: 'Property Crimes',
-      links: [
-        { name: 'Property Crimes Overview', href: '/practice-areas/property-crimes' },
-        { name: 'Criminal Mischief', href: '/practice-areas/criminal-mischief' },
-        { name: 'Burglary', href: '/practice-areas/burglary' },
-        { name: 'Motor Vehicle Theft', href: '/practice-areas/motor-vehicle-theft' },
-        { name: 'Robbery', href: '/practice-areas/robbery' },
-        { name: 'Shoplifting', href: '/practice-areas/shoplifting' },
-      ]
-    },
-    {
-      title: 'Resources & Media',
-      links: [
-        { name: 'Legal Blog', href: '/blog' },
-        { name: 'Inspirational Blog', href: '/inspirational-blog' },
-        { name: 'Media', href: '/media' },
-        { name: 'Podcast - BLG Law Talk', href: '/podcast' },
-        { name: 'TV Appearances', href: '/tv-appearances' },
-        { name: 'Publications', href: '/publications' },
-        { name: 'Photo Gallery', href: '/gallery' },
-        { name: 'Radio Appearances', href: '/radio' },
-        { name: 'Webinars', href: '/webinars' },
-      ]
-    },
-    {
-      title: 'Outreach Programs',
-      links: [
-        { name: 'Outreach Overview', href: '/outreach' },
-        { name: 'Addiction Program', href: '/outreach/addiction' },
-        { name: 'Career Development', href: '/outreach/career-development' },
-        { name: 'Criminal Justice Program', href: '/outreach/criminal-justice' },
-        { name: 'Domestic Violence Outreach Program', href: '/outreach/domestic-violence' },
-        { name: 'Events', href: '/outreach/events' },
-        { name: 'Mental Health Program', href: '/outreach/mental-health' },
-        { name: 'Police Practices Program', href: '/outreach/police-practices' },
-        { name: 'The Joyful Journey Program', href: '/outreach/joyful-journey' },
-      ]
-    },
-    {
-      title: 'Service Areas',
-      links: [
-        { name: 'Bergen County', href: '/service-areas/bergen-county' },
-        { name: 'Monmouth County', href: '/service-areas/monmouth-county' },
-        { name: 'Morris County', href: '/service-areas/morris-county' },
-        { name: 'Somerset County', href: '/service-areas/somerset-county' },
-      ]
-    },
-  ];
-
-  const [formData, setFormData] = React.useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', color: '#1a1a1a', lineHeight: '1.6' }}>
-      <div style={{ 
-        background: 'linear-gradient(135deg, #8B1A1A 0%, #1a1a1a 100%)', 
-        color: '#fff', 
-        padding: '80px 20px',
-        textAlign: 'center'
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h1 style={{ 
-            fontSize: '3.5rem', 
-            fontWeight: 'bold', 
-            margin: '0 0 20px 0',
-            textTransform: 'uppercase',
-            letterSpacing: '2px'
-          }}>
-            Sitemap
-          </h1>
-          <p style={{ fontSize: '1.3rem', margin: '0', opacity: '0.95' }}>
-            Complete Directory of Our Legal Services and Resources
-          </p>
+    <div style={{ fontFamily: 'sans-serif', maxWidth: '1200px', margin: '0 auto', padding: '40px 20px' }}>
+      <div style={{ background: '#8B1A1A', color: '#fff', padding: '60px 40px', marginBottom: '40px' }}>
+        <h1 style={{ fontSize: '2.5rem', margin: 0 }}>Sitemap</h1>
+        <p style={{ margin: '10px 0 0', fontSize: '1.1rem' }}>Call 862.225.1965 for a free consultation</p>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '40px' }}>
+        <div>
+          <nav style={{ lineHeight: '1.8' }}>
+            <ul style={{ listStyle: 'none', padding: 0 }}>
+              <li><a href="/" style={{ color: '#8B1A1A', textDecoration: 'none', fontWeight: 'bold' }}>Home</a></li>
+              <li style={{ marginTop: '20px' }}><strong>About Us</strong>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '10px' }}>
+                  <li><a href="/about/robert-bianchi" style={{ color: '#333', textDecoration: 'none' }}>Robert A. Bianchi, Esq</a></li>
+                  <li><a href="/about/christina-hall" style={{ color: '#333', textDecoration: 'none' }}>Christina Hall, Esq.</a></li>
+                  <li><a href="/about/christopher-eaton" style={{ color: '#333', textDecoration: 'none' }}>Christopher A. Eaton, Esq.</a></li>
+                  <li><a href="/about/danielle-esposito" style={{ color: '#333', textDecoration: 'none' }}>Danielle M. Esposito, Esq.</a></li>
+                  <li><a href="/about/david-bruno" style={{ color: '#333', textDecoration: 'none' }}>David J. Bruno, Esq.</a></li>
+                  <li><a href="/about/dennis-kessler" style={{ color: '#333', textDecoration: 'none' }}>Dennis Kessler, Esq.</a></li>
+                  <li><a href="/about/paul-dilella" style={{ color: '#333', textDecoration: 'none' }}>Paul A. Di Lella, Esq.</a></li>
+                  <li><a href="/about/tricia-margolis" style={{ color: '#333', textDecoration: 'none' }}>Tricia H. Margolis, Esq.</a></li>
+                  <li><a href="/careers" style={{ color: '#333', textDecoration: 'none' }}>Careers</a></li>
+                  <li><a href="/prosecutors-perspective" style={{ color: '#333', textDecoration: 'none' }}>Prosecutor's Perspective</a></li>
+                </ul>
+              </li>
+              <li style={{ marginTop: '20px' }}><strong>Practice Areas</strong>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '10px' }}>
+                  <li style={{ marginTop: '10px' }}><strong>Criminal Defense</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/appeals" style={{ color: '#333', textDecoration: 'none' }}>Appeals</a></li>
+                      <li><a href="/practice-areas/criminal-investigations" style={{ color: '#333', textDecoration: 'none' }}>Criminal Investigations</a></li>
+                      <li><a href="/practice-areas/crisis-management" style={{ color: '#333', textDecoration: 'none' }}>Crisis Management</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><strong>Municipal Court</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/bad-checks" style={{ color: '#333', textDecoration: 'none' }}>Bad Checks</a></li>
+                      <li><a href="/practice-areas/disorderly-conduct" style={{ color: '#333', textDecoration: 'none' }}>Disorderly Conduct</a></li>
+                      <li><a href="/practice-areas/leaving-scene-accident" style={{ color: '#333', textDecoration: 'none' }}>Leaving the Scene of an Accident</a></li>
+                      <li><a href="/practice-areas/resisting-arrest" style={{ color: '#333', textDecoration: 'none' }}>Resisting Arrest</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><a href="/practice-areas/juvenile-crimes" style={{ color: '#333', textDecoration: 'none' }}><strong>Juvenile Crimes</strong></a></li>
+                  <li style={{ marginTop: '10px' }}><strong>Sex Crimes</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/lewdness" style={{ color: '#333', textDecoration: 'none' }}>Lewdness</a></li>
+                      <li><a href="/practice-areas/monetary-penalties-sex-offenders" style={{ color: '#333', textDecoration: 'none' }}>Monetary Penalties for Sex Offenders</a></li>
+                      <li><a href="/practice-areas/observation-disclosure-sexual-contact" style={{ color: '#333', textDecoration: 'none' }}>Observation & Disclosure of Sexual Contact</a></li>
+                      <li><a href="/practice-areas/rape-shield-law" style={{ color: '#333', textDecoration: 'none' }}>Rape Shield Law</a></li>
+                      <li><a href="/practice-areas/registration-sex-offenders" style={{ color: '#333', textDecoration: 'none' }}>Registration of Sex Offenders</a></li>
+                      <li><a href="/practice-areas/sex-crime-definitions" style={{ color: '#333', textDecoration: 'none' }}>Sex Crime Definitions</a></li>
+                      <li><a href="/practice-areas/sexual-assault" style={{ color: '#333', textDecoration: 'none' }}>Sexual Assault</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><strong>White Collar Crimes</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/credit-card-fraud-theft" style={{ color: '#333', textDecoration: 'none' }}>Credit Card Fraud & Theft</a></li>
+                      <li><a href="/practice-areas/forgery" style={{ color: '#333', textDecoration: 'none' }}>Forgery</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><a href="/practice-areas/dwi" style={{ color: '#333', textDecoration: 'none' }}><strong>DWI</strong></a></li>
+                  <li style={{ marginTop: '10px' }}><strong>Drug Crimes</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/distribution-cds" style={{ color: '#333', textDecoration: 'none' }}>Distribution of Controlled Dangerous Substances</a></li>
+                      <li><a href="/practice-areas/possession-cds" style={{ color: '#333', textDecoration: 'none' }}>Possession of Controlled Dangerous Substances</a></li>
+                      <li><a href="/practice-areas/possession-intent-distribute" style={{ color: '#333', textDecoration: 'none' }}>Possession With the Intent to Distribute</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><strong>Violent Crimes</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/assault-by-auto" style={{ color: '#333', textDecoration: 'none' }}>Assault By Auto</a></li>
+                      <li><a href="/practice-areas/carjacking" style={{ color: '#333', textDecoration: 'none' }}>Carjacking</a></li>
+                      <li><a href="/practice-areas/child-cruelty-neglect" style={{ color: '#333', textDecoration: 'none' }}>Child Cruelty & Neglect</a></li>
+                      <li><a href="/practice-areas/death-by-auto" style={{ color: '#333', textDecoration: 'none' }}>Death By Auto or Vehicular Homicide</a></li>
+                      <li><a href="/practice-areas/domestic-violence" style={{ color: '#333', textDecoration: 'none' }}>Domestic Violence</a></li>
+                      <li><a href="/practice-areas/endangering-injured-victim" style={{ color: '#333', textDecoration: 'none' }}>Endangering An Injured Victim</a></li>
+                      <li><a href="/practice-areas/endangering-welfare-children" style={{ color: '#333', textDecoration: 'none' }}>Endangering The Welfare of Children</a></li>
+                      <li><a href="/practice-areas/harassment" style={{ color: '#333', textDecoration: 'none' }}>Harassment</a></li>
+                      <li><a href="/practice-areas/kidnapping" style={{ color: '#333', textDecoration: 'none' }}>Kidnapping</a></li>
+                      <li><a href="/practice-areas/manslaughter" style={{ color: '#333', textDecoration: 'none' }}>Manslaughter & Aggravated Manslaughter</a></li>
+                      <li><a href="/practice-areas/murder" style={{ color: '#333', textDecoration: 'none' }}>Murder</a></li>
+                      <li><a href="/practice-areas/restraining-orders" style={{ color: '#333', textDecoration: 'none' }}>Restraining Orders</a></li>
+                      <li><a href="/practice-areas/assault" style={{ color: '#333', textDecoration: 'none' }}>Simple & Aggravated Assault</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><strong>Property Crimes</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/practice-areas/criminal-mischief" style={{ color: '#333', textDecoration: 'none' }}>Criminal Mischief</a></li>
+                      <li><a href="/practice-areas/burglary" style={{ color: '#333', textDecoration: 'none' }}>Burglary</a></li>
+                      <li><a href="/practice-areas/motor-vehicle-theft" style={{ color: '#333', textDecoration: 'none' }}>Motor Vehicle Theft</a></li>
+                      <li><a href="/practice-areas/robbery" style={{ color: '#333', textDecoration: 'none' }}>Robbery</a></li>
+                      <li><a href="/practice-areas/shoplifting" style={{ color: '#333', textDecoration: 'none' }}>Shoplifting</a></li>
+                    </ul>
+                  </li>
+                  <li style={{ marginTop: '10px' }}><a href="/practice-areas/personal-injury" style={{ color: '#333', textDecoration: 'none' }}><strong>Personal Injury</strong></a></li>
+                </ul>
+              </li>
+              <li style={{ marginTop: '20px' }}><strong>Resources</strong>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '10px' }}>
+                  <li><a href="/blog" style={{ color: '#333', textDecoration: 'none' }}>Legal Blog</a></li>
+                  <li><a href="/inspirational-blog" style={{ color: '#333', textDecoration: 'none' }}>Inspirational Blog</a></li>
+                </ul>
+              </li>
+              <li style={{ marginTop: '20px' }}><strong>Media</strong>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '10px' }}>
+                  <li><a href="/podcast" style={{ color: '#333', textDecoration: 'none' }}>Podcast</a></li>
+                  <li><a href="/blg-law-talk" style={{ color: '#333', textDecoration: 'none' }}>BLG Law Talk</a></li>
+                  <li><a href="/tv-appearances" style={{ color: '#333', textDecoration: 'none' }}>TV Appearances</a></li>
+                  <li><a href="/publications" style={{ color: '#333', textDecoration: 'none' }}>Publications</a></li>
+                  <li><a href="/photos" style={{ color: '#333', textDecoration: 'none' }}>Photo Gallery</a></li>
+                  <li style={{ marginTop: '10px' }}><strong>Radio</strong>
+                    <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '5px' }}>
+                      <li><a href="/radio/trump-sued-pandemic" style={{ color: '#333', textDecoration: 'none' }}>Bob Bianchi On NJ 101.5: Can Trump Be Sued For $1 Trill. Over Pandemic?</a></li>
+                      <li><a href="/radio/david-bruno-lieberman-live" style={{ color: '#333', textDecoration: 'none' }}>ICYMI: David Bruno On "Lieberman Live" On Howard Stern 101</a></li>
+                      <li><a href="/radio/tough-justice-podcast" style={{ color: '#333', textDecoration: 'none' }}>Bianchi & Bruno Appeared On "Tough Justice Podcast"</a></li>
+                      <li><a href="/radio/police-practices" style={{ color: '#333', textDecoration: 'none' }}>Watch Bianchi Law Group Partner Bob Bianchi Speak About Police Practices</a></li>
+                      <li><a href="/radio/bob-bianchi-lieberman-live" style={{ color: '#333', textDecoration: 'none' }}>ICYMI: Bob Bianchi Appeared On "Lieberman Live" On Howard Stern 101</a></li>
+                      <li><a href="/radio/off-duty-officer-shooting" style={{ color: '#333', textDecoration: 'none' }}>Off Duty NJ Police Officer Shoots Man Outside Bar: Bob Bianchi Analyzes</a></li>
+                      <li><a href="/radio/nj-law-talk" style={{ color: '#333', textDecoration: 'none' }}>Bob Bianchi Appears On NJ Law Talk</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/webinars" style={{ color: '#333', textDecoration: 'none' }}>Webinars</a></li>
+                </ul>
+              </li>
+              <li style={{ marginTop: '20px' }}><strong>Outreach</strong>
+                <ul style={{ listStyle: 'none', paddingLeft: '20px', marginTop: '10px' }}>
+                  <li><a href="/outreach/addiction-program" style={{ color: '#333', textDecoration: 'none' }}>Addiction Program</a></li>
+                  <li><a href="/outreach/career-development" style={{ color: '#333', textDecoration: 'none' }}>Career Development</a></li>
+                  <li><a href="/outreach/criminal-justice-program" style={{ color: '#333', textDecoration: 'none' }}>Criminal Justice Program</a></li>
+                  <li><a href="/outreach/domestic-violence-program" style={{ color: '#333', textDecoration: 'none' }}>Domestic Violence Outreach Program</a></li>
+                  <li><a href="/outreach/events" style={{ color: '#333', textDecoration: 'none' }}>Events</a></li>
+                  <li><a href="/outreach/mental-health-program" style={{ color: '#333', textDecoration: 'none' }}>Mental Health Program</a></li>
+                  <li><a href="/outreach/police-practices-program" style={{ color: '#333', textDecoration: 'none' }}>Police Practices Program</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div style={{ background: '#f5f5f5', padding: '30px', borderRadius: '8px' }}>
+          <h3 style={{ color: '#8B1A1A', marginTop: 0 }}>Free Consultation</h3>
+          <p>Call us at <strong>862.225.1965</strong></p>
+          <a href="tel:8622251965" style={{ display: 'block', background: '#8B1A1A', color: '#fff', padding: '15px', textAlign: 'center', textDecoration: 'none', borderRadius: '4px' }}>Call Now</a>
         </div>
       </div>
-
-      <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '60px 20px' }}>
-        <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
-          <div style={{ flex: '2', minWidth: '300px' }}>
-            <div style={{ marginBottom: '40px' }}>
-              <h2 style={{ 
-                fontSize: '2rem', 
-                color: '#8B1A1A', 
-                marginBottom: '20px',
-                borderBottom: '3px solid #8B1A1A',
-                paddingBottom: '10px'
-              }}>
-                Site Navigation
-              </h2>
-              <p style={{ fontSize: '1.1rem', marginBottom: '30px', lineHeight: '1.8' }}>
-                The Bianchi Law Group provides comprehensive legal representation across New Jersey. 
-                Our experienced attorneys specialize in criminal defense, personal injury, and various 
-                practice areas. Use this sitemap to navigate our website and learn more about our services.
-              </p>
-            </div>
-
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-              gap: '30px',
-              marginBottom: '40px'
-            }}>
-              {sitemapSections.map((section, index) => (
-                <div 
-                  key={index} 
-                  style={{ 
-                    background: '#fff',
-                    border: '1px solid #e0e0e0',
-                    borderRadius: '8px',
-                    padding: '25px',
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-                    transition: 'all 0.3s ease'
-                  }}
-                >
-                  <h3 style={{ 
-                    fontSize: '1.3rem', 
-                    color: '#8B1A1A', 
-                    marginBottom: '15px',
-                    fontWeight: 'bold',
-                    borderLeft: '4px solid #8B1A1A',
-                    paddingLeft: '12px'
-                  }}>
-                    {section.title}
-                  </h3>
-                  <ul style={{ 
-                    listStyle: 'none', 
-                    padding: '0', 
-                    margin: '0' 
-                  }}>
-                    {section.links.map((link, linkIndex) => (
-                      <li key={linkIndex} style={{ marginBottom: '10px' }}>
-                        <a 
-                          href={link.href} 
-                          style={{ 
-                            color: '#1a1a1a', 
-                            textDecoration: 'none',
-                            fontSize: '0.95rem',
-                            display: 'flex',
-                            alignItems: 'center',
-                            transition: 'all 0.2s ease'
-                          }}
-                          onMouseOver={(e) => {
-                            e.currentTarget.style.color = '#8B1A1A';
-                            e.currentTarget.style.paddingLeft = '8px';
-                          }}
-                          onMouseOut={(e) => {
-                            e.currentTarget.style.color = '#1a1a1a';
-                            e.currentTarget.style.paddingLeft = '0';
-                          }}
-                        >
-                          <span style={{ marginRight: '8px' }}>→</span>
-                          {link.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
-            <div style={{ 
-              background: '#f9f9f9', 
-              padding: '40px', 
-              borderRadius: '8px',
-              marginTop: '40px',
-              borderLeft: '5px solid #8B1A1A'
-            }}>
-              <h2 style={{ 
-                fontSize: '1.8rem', 
-                color: '#8B1A1A', 
-                marginBottom: '20px' 
-              }}>
-                Recent Blog Posts
-              </h2>
-              
-              <div style={{ marginBottom: '30px' }}>
-                <h3 style={{ 
-                  fontSize: '1.3rem', 
-                  color: '#1a1a1a', 
-                  marginBottom: '10px' 
-                }}>
-                  New Jersey Survivors Justice Act L. 2025, c. 328
-                </h3>
-                <p style={{ 
-                  fontSize: '0.9rem', 
-                  color: '#666', 
-                  marginBottom: '10px' 
-                }}>
-                  March 17, 2026
-                </p>
-                <p style={{ marginBottom: '15px' }}>
-                  New Jersey Legislature enacts new sentencing law for victims of domestic violence 
-                  On January 20...
-                </p>
-                <a 
-                  href="/blog/survivors-justice-act" 
-                  style={{ 
-                    color: '#8B1A1A', 
-                    textDecoration: 'none',
-                    fontWeight: 'bold',
-                    fontSize: '0.95rem'
-                  }}
-                >
-                  Read More →
-                </a>
-              </div>
-
-              <div style={{ marginBottom: '30px' }}>
-                <h3 style={{ 
-                  fontSize: '1.3rem', 
-                  color: '#1a1a1a', 
-                  marginBottom: '10px' 
-                }}>
-                  Shaken Baby Syndrome: New Jersey Supreme Court State v Nieves
-                </h3>
-                <p style={{ 
-                  fontSize: '0.9rem', 
-                  color: '#666', 
-                  marginBottom: '10px' 
-                }}>
-                  December 16, 2025
-                </p>
-                <p style={{ marginBottom: '15px' }}>
-                  New Jersey Supreme Court Decision – Shaken Baby Syndrome/Abusive Head Trauma 
-                  On November 20, 2025...
-                </p>
-                <a 
-                  href="/blog/shaken-baby-syndrome" 
-                  style={{ 
-                    color: '#8B1A1A', 
-                    textDecoration: 'none',
-                    fontWeight: 'bold',
-                    fontSize: '0.95rem'
-                  }}
-                >
-                  Read More →
-                </a>
-              </div>
-
-              <a 
-                href="/blog" 
-                style={{ 
-                  display: 'inline-block',
-                  background: '#8B1A1A',
-                  color: '#fff',
-                  padding: '12px 30px',
-                  textDecoration: 'none',
-                  borderRadius: '4px',
-                  fontWeight: 'bold',
-                  marginTop: '10px'
-                }}
-              >
-                View All Blog Posts
-              </a>
-            </div>
-
-            <div style={{ 
-              background: '#1a1a1a', 
-              color: '#fff',
-              padding: '40px', 
-              borderRadius: '8px',
-              marginTop: '40px'
-            }}>
-              <h2 style={{ 
-                fontSize: '1.8rem', 
-                color: '#fff', 
-                marginBottom: '20px' 
-              }}>
-                Why Choose The Bianchi Law Group?
-              </h2>
-              <ul style={{ 
-                listStyle: 'none', 
-                padding: '0',
-                fontSize: '1.05rem',
-                lineHeight: '2'
-              }}>
-                <li style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    color: '#8B1A1A',
-                    fontSize: '1.3rem'
-                  }}>✓</span>
-                  Former prosecutors with insider knowledge
-                </li>
-                <li style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    color: '#8B1A1A',
-                    fontSize: '1.3rem'
-                  }}>✓</span>
-                  Comprehensive criminal defense representation
-                </li>
-                <li style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    color: '#8B1A1A',
-                    fontSize: '1.3rem'
-                  }}>✓</span>
-                  Aggressive advocacy for our clients
-                </li>
-                <li style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    color: '#8B1A1A',
-                    fontSize: '1.3rem'
-                  }}>✓</span>
-                  Serving Bergen, Monmouth, Morris, and Somerset Counties
-                </li>
-                <li style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    color: '#8B1A1A',
-                    fontSize: '1.3rem'
-                  }}>✓</span>
-                  Free initial consultations available
-                </li>
-                <li style={{ marginBottom: '12px', paddingLeft: '25px', position: 'relative' }}>
-                  <span style={{ 
-                    position: 'absolute', 
-                    left: '0', 
-                    color: '#8B1A1A',
-                    fontSize: '1.3rem'
-                  }}>✓</span>
-                  Community outreach and education programs
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div style={{ flex: '1', minWidth: '300px' }}>
-            <div style={{ 
-              position: 'sticky', 
-              top: '20px',
-              background: '#fff',
-              padding: '30px',
-              borderRadius: '8px',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              border: '2px solid #8B1A1A'
-            }}>
-              <h2 style={{ 
-                fontSize: '1.8rem', 
-                color: '#8B1A1A', 
-                marginBottom: '10px',
-                textAlign: 'center'
-              }}>
-                Schedule Your Free Consultation
-              </h2>
-              <p style={{ 
-                textAlign: 'center', 
-                marginBottom: '25px',
-                fontSize: '1rem',
-                color: '#666'
-              }}>
-                Contact us today to discuss your case
-              </p>
-
-              <div style={{ 
-                background: '#8B1A1A', 
-                color: '#fff', 
-                padding: '20px', 
-                borderRadius: '6px',
-                textAlign: 'center',
-                marginBottom: '25px'
-              }}>
-                <div style={{ fontSize: '0.9rem', marginBottom: '8px', opacity: '0.9' }}>
-                  Call Us Now
-                </div>
-                <a 
-                  href="tel:862-225-1965" 
-                  style={{ 
-                    color: '#fff', 
-                    textDecoration: 'none',
-                    fontSize: '1.8rem',
-                    fontWeight: 'bold',
-                    display: 'block'
-                  }}
-                >
-                  862.225.1965
-                </a>
-              </div>
-
-              <form onSubmit={handleSubmit}>
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={{ 
-                    display: 'block', 
-                    marginBottom: '8px', 
-                    fontWeight: 'bold',
-                    color: '#1a1a1a',
-                    fontSize: '0.95rem'
-                  }}>
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    style={{ 
-                      width: '100%', 
-                      padding: '12px', 
-                      border: '2px solid #ddd',
-                      borderRadius: '4px',
-                      fontSize: '1rem',
-                      boxSizing: 'border-box'
-                    }}
-                  />
-                </div>
-
-                <div style={{ marginBottom: '20px' }}>
-                  <label style={{
+    </div>
+  )
+}
