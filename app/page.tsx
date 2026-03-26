@@ -27,7 +27,7 @@ export default function HomePage() {
 
       {/* HERO */}
       <section style={{ background: 'linear-gradient(135deg, #0d0d0d 0%, #1a0505 40%, #2d0a0a 100%)', color: '#fff', minHeight: 580, position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${WP}/06/hero-img.png)`, backgroundSize: 'cover', backgroundPosition: '55% 20%', opacity: 0.4 }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${WP}/06/hero-img.png)`, backgroundSize: 'cover', backgroundPosition: '40% 20%', opacity: 0.4 }} />
         <div style={{ maxWidth: 1240, margin: '0 auto', padding: '60px 24px', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '1fr 420px', gap: 60, alignItems: 'center', width: '100%' }}>
           <div>
             <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#e8a0a0', marginBottom: 14 }}>Former Prosecutors · NJ Supreme Court Certified</div>
