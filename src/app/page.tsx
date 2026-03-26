@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Former Prosecutors and Criminal Defense Attorneys in New Jersey. Safe to Talk, Safe to Trust, Ready to Fight. Call 862.225.1965 for a free consultation.',
 }
 
+// v3
 const WP = 'https://bianchilawgroup.com/wp-content/uploads/2025'
 
 export default function HomePage() {
